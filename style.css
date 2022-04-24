@@ -1,0 +1,122 @@
+:root {
+  /* Primary */
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%); /*graphic design text */
+  --Dark-blue: hsl(198, 62%, 26%); /* photography text */
+  --Dark-moderate-cyan: hsl(168, 34%, 41%); /* footer */
+
+  /* neutral */
+
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: ;
+  font-size: 18px;
+  
+  min-height: 100vh;
+  background-color: var(--Dark-moderate-cyan);
+  color: var(--White);
+  
+}
+
+.container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1440px;
+   
+
+}
+
+.topnav {
+ 
+  overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black; */
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+.topnav__items {
+    text-decoration: none;
+    color: var(--White);
+}
+
+.topnav__btn {
+
+}
+
+.section--1 {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.section--1__img-one {
+    width: 100%;
+    max-width: 45px;
+   
+}
+
+.section--1__header {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
