@@ -20,8 +20,8 @@ body {
   font-size: 18px;
   
   min-height: 100vh;
-  background-color: var(--Dark-moderate-cyan);
-  color: var(--White);
+  /* background-color: var(--Dark-blue); */
+  color: var(--Very-dark-desaturated-blue);
   
 }
 
@@ -65,7 +65,7 @@ header {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  color: white;
+  
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -86,17 +86,20 @@ header {
 .section--1 {
     background-image: url(./images/desktop/image-header.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     /* display: flex;
     flex-direction: column; */
+    color: white;
+    height: 45rem;
+    background-position:center;
 }
 
 .section--1__img-one {
     width: 100%;
     max-width: 45px;
-    position: relative;
+    position: absolute;
     left: 50%;
-    bottom: 50%;
+    /* bottom: 50%; */
     display: inline-block;
    
 }
@@ -129,14 +132,35 @@ header {
     justify-content: center;
 }
 
+.section--2__up-link-egg {
+  text-decoration-line: underline;
+  text-decoration-color: var(--Yellow) ;
+  text-decoration-thickness: 5px;
+}
+
+.section--2__up-link-glass {
+  text-decoration-line: underline;
+  text-decoration-color: var(--Soft-red) ;
+  text-decoration-thickness: 3px;
+}
+
+.section--2__up-box-img {
+  width: 100%;
+  max-width: 720px;
+}
+
 .section--2__down-box-left {
   background-image: url(./images/desktop/image-graphic-design.jpg);
   background-repeat: no-repeat;
+  color: var(--Dark-desaturated-cyan);
+  background-position:center;
 }
 
 .section--2__down-box-right {
   background-image: url(./images/desktop/image-photography.jpg);
   background-repeat: no-repeat;
+  color: var(--Dark-blue);
+  background-position:center;
 }
 
 .section--2__down-info {
@@ -148,8 +172,82 @@ header {
 .section--2__down-excerpt {
   width: 39ch;
   text-align: center;
-
 }
+
+
+
+.section--3 {
+  background-color: var(--White) ;
+  color: var(--Dark-grayish-blue);
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section--3__testimonials {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+}
+
+.section--3__testimonial {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-img {
+  border-radius: 50%; 
+  width: 100%;
+  max-width: 74px;
+}
+
+.section--3__header {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--Grayish-blue);
+ 
+}
+
+.section--3__excerpt {
+  width: 36ch;
+  display: inline-block;
+  text-align: center;
+}
+
+.section--4 {
+  
+}
+
+.section--4__gallery {
+  display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.section--4__img {
+  max-width: 600px;
+  width: 100%;
+}
+
+footer {
+  background-color: var(--Dark-moderate-cyan);
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
 
 
 @media screen and (max-width: 600px) {
