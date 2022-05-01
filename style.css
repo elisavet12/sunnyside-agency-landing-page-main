@@ -286,7 +286,7 @@ header {
 }
 
 footer {
-  background-color: var(--Dark-moderate-cyan);
+  background-color: hsl(167, 44%, 70%);
 }
 
 .footer-box {
@@ -378,8 +378,8 @@ footer {
   }
 }
 
-.test {
-  display: block;
+.test--open {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -419,8 +419,9 @@ footer {
 
   .burger {
     display: inline-block;
-    background-color: var(--Dark-moderate-cyan);
+    color: transparent;
     border-style: none;
+    background-color: hsl(167, 44%, 70%);
   }
 
   .noScroll {
