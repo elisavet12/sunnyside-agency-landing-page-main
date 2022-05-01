@@ -40,34 +40,34 @@
     </style>
   </head>
   <body>
-    <!-- <div class="container"> -->
     <section class="section section--1">
-      <header>
-        <div class="logo">
-          <img src="./images/logo.svg" alt="logo" class="topnav__logo" />
-        </div>
-        <div class="topnav" id="myTopnav">
-          <a href="" class="active"></a>
-          <a href="#about" class="topnav__items">About</a>
-          <a href="#servises" class="topnav__items">Services</a>
-          <a href="#projects" class="topnav__items">Projects</a>
-          <a href="#contact" class="">
-            <button class="topnav__btn">Contact</button>
-          </a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars">
-              <img src="./images/icon-hamburger.svg" alt="" class="" />
-            </i>
-          </a>
-        </div>
+      <header class="header">
+        <a href="/" class="homelink">
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+        <nav class="nav nav--main">
+          <a href="#" class="nav__link">About</a>
+          <a href="#" class="nav__link">Services</a>
+          <a href="#  " class="nav__link">Projects</a>
+          <button class="nav__link nav__link--btn">Contact</button>
+        </nav>
+        <button class="burger">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="open menu"
+            class="burger"
+            role="open menu"
+          />
+        </button>
       </header>
-
-      <h1 class="section--1__header">We are creatives</h1>
-      <img
-        src="./images/icon-arrow-down.svg"
-        alt="arrow"
-        class="section--1__img-one"
-      />
+      <div id="myDiv" class="test">
+        <h1 class="section--1__header">We are creatives</h1>
+        <img
+          src="./images/icon-arrow-down.svg"
+          alt="arrow"
+          class="section--1__img-one"
+        />
+      </div>
     </section>
     <section class="section section--2">
       <div class="section--2__up">
@@ -227,7 +227,6 @@
         </div>
       </div>
     </footer>
-    <!-- </div> -->
 
     <div class="attribution">
       Challenge by

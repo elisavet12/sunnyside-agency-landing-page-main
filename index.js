@@ -1,9 +1,18 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+var burger = document.querySelector("button.burger");
+var nav = document.querySelector("nav.nav--main");
+var body = document.querySelector("body");
+var mediaQuery = window.matchMedia("(min-width: 600px)");
+
+function openMenu() {
+  nav.classList.add("nav--open");
+  body.classList.add("noScroll");
+  document.getElementById("myDiv").style.display = "none";
+}
+
+function isMobile() {
+  if (mediaQuery.matches) {
+    openMenu();
   }
 }
+
+burger.addEventListener("click", openMenu);
